@@ -20,12 +20,12 @@ int main(){
 
     // testiranje karata, score za poredenje ko ce da win-a treba biti napisan
 
-    if(sviZnakoviIsti()){
-      if(royalFlush()){
+    if(sviZnakoviIsti(znakKarte)){
+      if(royalFlush(brojKarte)){
         //---------------------------------------------
       }
       else{
-        if (straightFlush()){
+        if (straightFlush(brojKarte)){
             //----------------------------------------------
         }
         else{
@@ -35,6 +35,36 @@ int main(){
 
     }
     else{
-        //-----------------------------------------Sve ostalo-----
+        if(fourOfAKind(brojKarte)){
+            //----------------------------
+        }
+        else{
+            if(fullHouse(brojKarte)){
+                //-------------------
+            }
+            else{
+                if(straight(brojKarte)){
+                    //-------------------
+                }
+                else{
+                    if(threeOfAKind(brojKarte)){
+                        //-----------------
+                    }
+                    else{
+                        if(twoPair(brojKarte)){
+                            //--------------------
+                        }
+                        else{
+                            if(pair(brojKarte)){
+                                //-------------------
+                            }
+                            else{
+                                //----------highCard--------
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
