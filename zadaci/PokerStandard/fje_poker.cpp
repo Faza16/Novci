@@ -147,6 +147,7 @@ using namespace std;
 
     bool threeOfAKind(int ruka[5]){
         bool jesteTOAK;
+        int redoslijed[5];
         for(int i=0; i<=4; i++){
             redoslijed[i]=ruka[i];
         }
@@ -162,6 +163,7 @@ using namespace std;
 
     bool twoPair(int ruka[5]){
         bool jesteTP;
+        int redoslijed[5];
         for(int i=0; i<=4; i++){
             redoslijed[i]=ruka[i];
         }
@@ -177,8 +179,27 @@ using namespace std;
         return jesteTP;
     }
 
-
+    bool pair(int ruka[5]){
+        bool jesteP;
+        int redoslijed[5];
+        for(int i=0; i<=4; i++){
+            redoslijed[i]=ruka[i];
+        }
+        sort(redoslijed, redoslijed+5);
+        if(redoslijed[0]==redoslijed[1] || redoslijed[1]==redoslijed[2] || redoslijed[2]==redoslijed[3] || redoslijed[3]==redoslijed[4]){
+            jesteP = true;
+        }
+        else{
+            jesteP = false;
+        }
+        return jesteP;
     }
 
-
-
+    int highCard(int ruka[5]){
+        int redoslijed[5];
+        for(int i=0; i<=4; i++){
+            redoslijed[i]=ruka[i];
+        }
+        sort(redoslijed, redoslijed+5);
+        return redoslijed[4];
+    }
