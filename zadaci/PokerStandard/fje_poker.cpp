@@ -93,7 +93,8 @@ using namespace std;
         bool jesteSF;
         int redoslijed[5] = ruka[5];
         sort(redoslijed, redoslijed+5);
-        if
+        int prvaKarta = redoslijed[0];
+        if()
     }
 
 
