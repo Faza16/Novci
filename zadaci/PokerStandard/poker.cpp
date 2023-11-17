@@ -9,19 +9,32 @@ class Karte1 {
             int brojKarte [5];
 
         public:
-            znakKarte[0] = znakKarte();
+            znakKarte[0] = unosZnakaKarte();
             brojKarte[0] = unosBrojaKarte();
-            znakKarte[0] = znakKarte();
+            znakKarte[0] = unosZnakaKarte();
             brojKarte[1] = unosBrojaKarte();
-            znakKarte[2] = znakKarte();
+            znakKarte[2] = unosZnakaKarte();
             brojKarte[2] = unosBrojaKarte();
-            znakKarte[3] = znakKarte();
+            znakKarte[3] = unosZnakaKarte();
             brojKarte[3] = unosBrojaKarte();
-            znakKarte[4] = znakKarte();
+            znakKarte[4] = unosZnakaKarte();
             brojKarte[4] = unosBrojaKarte();
     }; // treba vidjeti kako se ovo puni
 
 int main(){
     int igraci = brojIgraca();
+    char znakKarte [5];
+    int brojKarte [5];
+    znakKarte[0] = unosZnakaKarte();
+    brojKarte[0] = unosBrojaKarte();
+    znakKarte[0] = unosZnakaKarte();
+    brojKarte[1] = unosBrojaKarte();
+    znakKarte[2] = unosZnakaKarte();
+    brojKarte[2] = unosBrojaKarte();
+    znakKarte[3] = unosZnakaKarte();
+    brojKarte[3] = unosBrojaKarte();
+    znakKarte[4] = unosZnakaKarte();
+    brojKarte[4] = unosBrojaKarte();
+
     // treba pisati broj igraca, karte u ruci, testiranje karata
 }
