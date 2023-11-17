@@ -105,9 +105,27 @@ using namespace std;
         else{
             jesteFOAK = false;
         }
+        return jesteFOAK;
+    }
+
+    bool fullHouse(int ruka[5]){
+        bool jesteFH;
+        int redoslijed[5];
+        for(int i=0; i<=4; i++){
+            redoslijed[i]=ruka[i];
+        }
+        sort(redoslijed, redoslijed+5);
+        if((redoslijed[0] == redoslijed[2] && redoslijed[3]==redoslijed[4]) || (redoslijed[0]==redoslijed[1] && redoslijed[2]==redoslijed[4])){
+            jesteFH = true;
+        }
+        else{
+            jesteFH = false;
+        }
     }
 
     
+
+
     }
 
 
