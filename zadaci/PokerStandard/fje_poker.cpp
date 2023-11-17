@@ -2,24 +2,6 @@
 
 using namespace std;
 
-    class Karte1 {
-        private:
-            char znakKarte [5];
-            int brojKarte [5];
-
-        public:
-            znakKarte[0] = znakKarte();
-            brojKarte[0] = unosBrojaKarte();
-            znakKarte[0] = znakKarte();
-            brojKarte[1] = unosBrojaKarte();
-            znakKarte[2] = znakKarte();
-            brojKarte[2] = unosBrojaKarte();
-            znakKarte[3] = znakKarte();
-            brojKarte[3] = unosBrojaKarte();
-            znakKarte[4] = znakKarte();
-            brojKarte[4] = unosBrojaKarte();
-    }
-
     int brojIgraca(){
         int igraci;
         bool jedanIgrac = true;
@@ -63,6 +45,24 @@ using namespace std;
             }
         }
         return znakKarte;
+    }
+
+    class Karte1 {
+        private:
+            char znakKarte [5];
+            int brojKarte [5];
+
+        public:
+            znakKarte[0] = znakKarte();
+            brojKarte[0] = unosBrojaKarte();
+            znakKarte[0] = znakKarte();
+            brojKarte[1] = unosBrojaKarte();
+            znakKarte[2] = znakKarte();
+            brojKarte[2] = unosBrojaKarte();
+            znakKarte[3] = znakKarte();
+            brojKarte[3] = unosBrojaKarte();
+            znakKarte[4] = znakKarte();
+            brojKarte[4] = unosBrojaKarte();
     }
 
 
