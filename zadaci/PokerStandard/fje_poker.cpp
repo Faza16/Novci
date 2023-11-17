@@ -1,4 +1,4 @@
-#includ <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -64,5 +64,37 @@ using namespace std;
             znakKarte[4] = znakKarte();
             brojKarte[4] = unosBrojaKarte();
     }
+    
+    bool sviZnakoviIsti (char ruka[5]) {
+        bool JesteSZI;
+        if (ruka[0]==ruka[1] && ruka[0]==ruka[2] && ruka[0]==ruka[3] && ruka[0]==ruka[4]){
+            JesteSZI = true;
+        }
+        else{
+            JesteSZI = false;
+        }
+        return JesteSZI;
+    }
+
+    bool royalFlush (int ruka[5]){
+        bool jesteRF;
+        int redoslijed[5] = ruka[5];
+        sort(redoslijed, redoslijed+5);
+        if(redoslijed[5]== {1, 10, 12, 13, 14}){
+            jesteRF = true;
+        }
+        else{
+            jesteRF = false;
+        }
+        return jesteRF;
+    }
+
+    bool straightFlush(int ruka[5]){
+        bool jesteSF;
+        int redoslijed[5] = ruka[5];
+        sort(redoslijed, redoslijed+5);
+        if
+    }
+
 
 
