@@ -124,6 +124,27 @@ using namespace std;
         return jesteFH;
     }
 
+    bool straight(int ruka[5]){
+        bool jesteS;
+        int redoslijed[5];
+        for(int i=0; i<=4; i++){
+            redoslijed[i]=ruka[i];
+        }
+        sort(redoslijed, redoslijed+5);
+        int prvaKarta = redoslijed[0];
+        if((redoslijed[0] == prvaKarta && redoslijed[1] == prvaKarta + 1 && redoslijed[2] == prvaKarta + 2 && redoslijed[3] == prvaKarta + 3 && redoslijed[4] == prvaKarta + 4)||
+        (redoslijed[0] == 7 && redoslijed[1] == 8 && redoslijed[2] == 9 && redoslijed[3] == 10 && redoslijed[4] == 12)||
+        (redoslijed[0] == 8 && redoslijed[1] == 9 && redoslijed[2] == 10 && redoslijed[3] == 12 && redoslijed[4] == 13)||
+        (redoslijed[0] == 9 && redoslijed[1] == 10 && redoslijed[2] == 12 && redoslijed[3] == 13 && redoslijed[4] == 14)||
+        (redoslijed[0] == 1 && redoslijed[1] == 10 && redoslijed[2] == 12 && redoslijed[3] == 13 && redoslijed[4] == 14)){
+            jesteS = true;
+        }
+        else{
+            jesteS = false;
+        }
+        return jesteS;
+    }
+
     bool threeOfAKind(int ruka[5]){
         bool jesteTOAK;
         for(int i=0; i<=4; i++){
