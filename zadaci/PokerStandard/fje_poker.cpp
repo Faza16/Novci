@@ -160,6 +160,23 @@ using namespace std;
         return jesteTOAK;
     }
 
+    bool twoPair(int ruka[5]){
+        bool jesteTP;
+        for(int i=0; i<=4; i++){
+            redoslijed[i]=ruka[i];
+        }
+        sort(redoslijed, redoslijed+5);
+        if((redoslijed[0]==redoslijed[1] && redoslijed[2]==redoslijed[3])||
+           (redoslijed[0]==redoslijed[1] && redoslijed[3]==redoslijed[4])||
+           (redoslijed[1]==redoslijed[2] && redoslijed[3]==redoslijed[4])||){
+            jesteTP = true;
+        }
+        else{
+            jesteTP = false;
+        }
+        return jesteTP;
+    }
+
 
     }
 
