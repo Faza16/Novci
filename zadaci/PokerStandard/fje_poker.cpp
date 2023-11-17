@@ -91,6 +91,23 @@ using namespace std;
         else{
             jesteSF = false;
         }
+    
+    bool fourOfAKind(int ruka[5]){
+        bool jesteFOAK;
+        int redoslijed[5];
+        for(int i=0; i<=4; i++){
+            redoslijed[i]=ruka[i];
+        }
+        sort(redoslijed, redoslijed+5);
+        if(redoslijed[0]==redoslijed[3] || redoslijed[1]==redoslijed[4]){
+            jesteFOAK = true;
+        }
+        else{
+            jesteFOAK = false;
+        }
+    }
+
+    
     }
 
 
