@@ -19,9 +19,9 @@ class Karte1 {
             brojKarte[3] = unosBrojaKarte();
             znakKarte[4] = znakKarte();
             brojKarte[4] = unosBrojaKarte();
-    };
+    }; // treba vidjeti kako se ovo puni
 
 int main(){
     int igraci = brojIgraca();
-
+    // treba pisati broj igraca, karte u ruci, testiranje karata
 }
