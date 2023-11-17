@@ -18,5 +18,23 @@ int main(){
     znakKarte[4] = unosZnakaKarte();
     brojKarte[4] = unosBrojaKarte();
 
-    // treba pisati broj igraca, karte u ruci, testiranje karata
+    // testiranje karata, score za poredenje ko ce da win-a treba biti napisan
+
+    if(sviZnakoviIsti()){
+      if(royalFlush()){
+        //---------------------------------------------
+      }
+      else{
+        if (straightFlush()){
+            //----------------------------------------------
+        }
+        else{
+            //-------------------FLUSH-------------
+        }
+      }
+
+    }
+    else{
+        //-----------------------------------------Sve ostalo-----
+    }
 }
