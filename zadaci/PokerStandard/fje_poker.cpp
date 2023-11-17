@@ -124,19 +124,19 @@ using namespace std;
         return jesteFH;
     }
 
-    bool straight(int ruka[5]){
-        bool jesteS;
+    bool threeOfAKind(int ruka[5]){
+        bool jesteTOAK;
         for(int i=0; i<=4; i++){
             redoslijed[i]=ruka[i];
         }
         sort(redoslijed, redoslijed+5);
         if(redoslijed[0]==redoslijed[2] || redoslijed[1]==redoslijed[3] || redoslijed[2]==redoslijed[4]){
-            jesteS = true;
+            jesteTOAK = true;
         }
         else{
-            jesteS = false;
+            jesteTOAK = false;
         }
-        return jesteS;
+        return jesteTOAK;
     }
 
 
