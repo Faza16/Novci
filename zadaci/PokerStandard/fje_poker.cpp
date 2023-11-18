@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
     int brojIgraca(){
@@ -36,8 +37,13 @@ using namespace std;
         bool dobarZnak = true;
         while(dobarZnak){
             cin>>znakKarte;
+<<<<<<< HEAD
             if (znakKarte!='c' && znakKarte!='d' && znakKarte!='h' && znakKarte!='s'){
                 dobarBroj = false;
+=======
+            if (znakKarte!='c' || znakKarte!='d' || znakKarte!='h' || znakKarte!='s'){
+                dobarZnak = false;
+>>>>>>> 2c809356804493659f52d118047fb609b8cef226
             }
             else{
                 cout<<"Ovaj znak ne može biti na karti"<<endl;
@@ -90,6 +96,11 @@ using namespace std;
         else{
             jesteSF = false;
         }
+<<<<<<< HEAD
+=======
+        return jesteSF;
+    }
+>>>>>>> 2c809356804493659f52d118047fb609b8cef226
     
     bool fourOfAKind(int ruka[5]){
         bool jesteFOAK;
