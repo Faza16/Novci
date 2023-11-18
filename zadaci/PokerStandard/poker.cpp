@@ -21,7 +21,7 @@ int main(){
     znakKarte[4] = unosZnakaKarte();
     brojKarte[4] = unosBrojaKarte(); // broj karte=sort(broj karte) treba napraviti
 
-    // score za poredenje ko ce da win-a treba biti napisan
+    // score za poredenje ko ce da win-a treba biti napisan, da ne moze biti vise istih karata
 
     if(sviZnakoviIsti(znakKarte)){
       if(royalFlush(brojKarte)){
@@ -58,12 +58,12 @@ int main(){
                             score[0] = 3;
                         }
                         else{
-                            //if(pair(brojKarte)){
-                                //score[0] = 2;
-                            //}
-                            //else{
+                            if(onePair(brojKarte)){
+                                score[0] = 2;
+                            }
+                            else{
                                 score[0] = 1;
-                            //}
+                            }
                         }
                     }
                 }
