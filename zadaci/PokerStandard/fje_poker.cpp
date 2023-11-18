@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
     int brojIgraca(){
@@ -36,7 +37,7 @@ using namespace std;
         bool dobarZnak = true;
         while(dobarZnak){
             cin>>znakKarte;
-            if (znakKarte!='c' && znakKarte!='d' && znakKarte!='h' && znakKarte!='s'){
+            if (znakKarte!='c' || znakKarte!='d' || znakKarte!='h' || znakKarte!='s'){
                 dobarZnak = false;
             }
             else{
@@ -90,6 +91,7 @@ using namespace std;
         else{
             jesteSF = false;
         }
+        return jesteSF;
     }
     
     bool fourOfAKind(int ruka[5]){
@@ -179,20 +181,20 @@ using namespace std;
         return jesteTP;
     }
 
-    bool pair(int ruka[5]){
-        bool jesteP;
+    bool onePair(int ruka[5]){
+        bool jesteOP;
         int redoslijed[5];
         for(int i=0; i<=4; i++){
             redoslijed[i]=ruka[i];
         }
         sort(redoslijed, redoslijed+5);
         if(redoslijed[0]==redoslijed[1] || redoslijed[1]==redoslijed[2] || redoslijed[2]==redoslijed[3] || redoslijed[3]==redoslijed[4]){
-            jesteP = true;
+            jesteOP = true;
         }
         else{
-            jesteP = false;
+            jesteOP = false;
         }
-        return jesteP;
+        return jesteOP;
     }
 
     int highCard(int ruka[5]){
