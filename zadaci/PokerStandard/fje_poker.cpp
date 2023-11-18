@@ -37,7 +37,7 @@ using namespace std;
         bool dobarZnak = true;
         while(dobarZnak){
             cin>>znakKarte;
-            if (znakKarte!='c' && znakKarte!='d' && znakKarte!='h' && znakKarte!='s'){
+            if (znakKarte!='c' || znakKarte!='d' || znakKarte!='h' || znakKarte!='s'){
                 dobarZnak = false;
             }
             else{
