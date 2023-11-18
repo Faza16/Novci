@@ -7,7 +7,7 @@ using namespace std;
         bool jedanIgrac = true;
         while(jedanIgrac){
             cin>>igraci;
-            if (igraci<=6 && graci>=2){
+            if (igraci<=6 && igraci>=2){
                 jedanIgrac = false;
             }
             else{
@@ -38,7 +38,7 @@ using namespace std;
         while(dobarZnak){
             cin>>znakKarte;
             if (znakKarte!='c' && znakKarte!='d' && znakKarte!='h' && znakKarte!='s'){
-                dobarBroj = false;
+                dobarZnak = false;
             }
             else{
                 cout<<"Ovaj znak ne može biti na karti"<<endl;
@@ -91,6 +91,8 @@ using namespace std;
         else{
             jesteSF = false;
         }
+        return jesteSF;
+    }
     
     bool fourOfAKind(int ruka[5]){
         bool jesteFOAK;
@@ -170,7 +172,7 @@ using namespace std;
         sort(redoslijed, redoslijed+5);
         if((redoslijed[0]==redoslijed[1] && redoslijed[2]==redoslijed[3])||
            (redoslijed[0]==redoslijed[1] && redoslijed[3]==redoslijed[4])||
-           (redoslijed[1]==redoslijed[2] && redoslijed[3]==redoslijed[4])||){
+           (redoslijed[1]==redoslijed[2] && redoslijed[3]==redoslijed[4])){
             jesteTP = true;
         }
         else{
