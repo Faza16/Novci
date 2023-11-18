@@ -70,5 +70,4 @@ int main(){
             }
         }
     }
-    cout<<score[0];
 }
